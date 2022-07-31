@@ -1,0 +1,283 @@
+<html>
+  <head>
+<title> rex gallery </title>
+<style>
+@-webkit-keyframes slideImage{
+ 0%:{left:-700px;}
+ 100%{left:0px;}
+}
+
+ @-moz-keyframes slideImage{
+ 0%{left:-700px;}
+ 100%{left:0px;}     
+}
+
+
+
+@-moz-keyframes slidein {
+            from {
+               margin-left:700px;
+               
+            }
+            100% {
+               
+               margin-left:25%;
+               
+            }
+            to {
+               margin-left:0px;
+               
+            }
+         }
+         @-webkit-keyframes slidein {
+            from {
+               margin-left:700px;
+               
+            }
+            100% {
+               
+               margin-left:25%;
+               
+            }
+            to {
+               margin-left:0px;
+               
+            }
+         }
+
+body {
+	background-color:black;
+}
+
+#title {
+	font-family: Agency FB;
+	text-align: center;
+	text-shadow: 2px 2px blue;
+}
+
+#mygallery {
+	width: 580px; 
+	padding: 10px; 
+	background-color:black;
+	margin: 0 auto;   /* Used for centering elements on a page */
+	
+}
+
+/* 
+    This one is for the full image displayed in the center of the page
+*/
+#fullimage {
+	list-style: none; /* This defines the style for <li>. We do not need bullets and that is the reason the value is none */
+	width: 640px; 
+	height: 450px; 
+	margin: 0px; 
+	padding: 0px;
+	overflow: hidden; /* This line is required to make sure that we hide the images below it. Many of you have defined it as auto, which is wrong in this case.*/
+	-moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+	
+	
+}
+
+
+#fullimage li img {
+	width: 580px;
+
+	
+}
+
+/* Thumb image styles */
+
+#thumbimage {
+	list-style: none;
+	overflow: hidden;
+  float: right;
+  
+}
+
+#thumbimage li {
+  float: left;    
+}
+
+#thumbimage li img {
+  /* 
+      Many of you had give the value as Absolute.
+      It should be relative for this as we need to postion the element relative to its normal position and not its ancestor element (absolute) 
+  */
+	position:relative;
+	float:right;
+	margin-left: 5px;
+	border: 1px solid white;
+	opacity: 0.4;
+	width: 50px; 
+  height: 50px;
+	
+}
+
+#thumbimage li img:hover {
+	opacity: 1; /* This is the property required for transparency. It takes values between 0 and 1. */
+
+
+}
+
+/* 
+    I have defined a class tooltip in the html. This is used to style the text that overlays on the image 
+*/
+
+.tooltip {
+  background: rgba(0,0,0,0.7);
+  width: 580px;
+  height: -250px;
+  position: relative;
+  bottom: 90px; /* This property pushes the text from the bottom of the container to on top of the image.*/
+  left: 0px;
+}
+
+/* 
+    This styles the text within the tooltip class.
+*/
+.tooltip span {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 60px;
+  padding: 0 0 0 10px;
+}
+
+#pic1:target {
+            -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+}
+
+#pic2:target{
+               -moz-animation-duration: 1.5s;
+               -webkit-animation-duration: 1.5s;
+               -moz-animation-name: slidein;
+               -webkit-animation-name: slidein;
+   }
+
+#pic3:target {
+            -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+
+}
+#pic4:target {
+             -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+ }
+#pic5:target {
+             -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+ }
+#pic6:target {
+             -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+ }
+#pic7:target {
+             -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+ }
+#pic8:target {
+             -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+ }
+#pic9:target {
+             -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+ }
+#pic10:target {
+             -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+ }
+#pic11:target {
+             -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+ }
+#pic12:target {
+             -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+ }
+#pic13:target {
+             -moz-animation-duration: 1.5s;
+            -webkit-animation-duration: 1.5s;
+            -moz-animation-name: slidein;
+            -webkit-animation-name: slidein;
+ }
+
+</style>
+</head>
+
+<body>
+  <h1 id="title"> Image Gallery </h1>
+  <div id="mygallery">
+    <ul id="fullimage">
+
+      <li id="pic1"> <img src="photo1.jpg">
+        <p>
+          <div class="tooltip"> <span>shubham pushkar</span> </div>
+        </p>
+        <li id="pic2"> <img src="photo2.jpg">
+          <p>
+            <div class="tooltip"><span> Koala </span></div>
+          </p>
+          <li id="pic3"> <img src="photo3.jpg">
+            <div class="tooltip">
+              <p> <span> Lighthouse </span></div>
+            </p>
+ <li id="pic4"> <img src="photo4.jpg">               <li id="pic5"> <img src="photo5.jpg">
+<li id="pic6"> <img src="photo6.jpg">               <li id="pic7"> <img src="photo7.jpg">
+<li id="pic8"> <img src="photo8.jpg">               <li id="pic9"> <img src="photo9.jpg">
+<li id="pic10"> <img src="photo10.jpeg">               <li id="pic11"> <img src="photo11.jpg">
+<li id="pic12"> <img src="photo12.jpg">               <li id="pic13"> <img src="photo13.jpg">
+<li id="pic14"> <img src="photo14.jpg">               <li id="pic15"> <img src="photo15.jpg">
+
+              <p>
+                <div class="tooltip"> <span> Penguins </span></div>
+              </p>
+    </ul>
+    <ul id="thumbimage">
+      
+    <li>  <a href="#pic1"> <img src="photo1.jpg"> </a>  </li>
+    <li>  <a href="#pic2">  <img src="photo2.jpg"> </a>  </li>
+    <li>  <a href="#pic3">  <img src="photo3.jpg"> </a> </li>   
+    <li>  <a href="#pic4">  <img src="photo4.jpg"> </a> </li>
+    <li>  <a href="#pic5">  <img src="photo5.jpg"> </a>  </li>
+    <li>  <a href="#pic6">  <img src="photo6.jpg"> </a>  </li>
+    <li>  <a href="#pic7">  <img src="photo7.jpg"> </a> </li>
+    <li>  <a href="#pic8">  <img src="photo8.jpg"> </a> </li>
+    <li>  <a href="#pic9">  <img src="photo9.jpg"> </a> </li>
+    <li>  <a href="#pic10"> <img src="photo10.jpeg"> </a> </li>
+    <li>  <a href="#pic11"> <img src="photo11.jpg"> </a> </li> 
+    <li>  <a href="#pic12"> <img src="photo12.jpg"> </a> </li>
+      </li>
+    
+
+</ul>
+    <br style="clear:both;"/>
+  </div>
+</body>
+</html>
