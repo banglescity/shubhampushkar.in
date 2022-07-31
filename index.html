@@ -7,20 +7,48 @@
 		"width=device-width, initial-scale=1.0">
 	<title>shubham pushkar</title>
 <style>
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: yellow;
+}
+#pf:hover{
+         color:white;
+        text-shadow:6px 2px 6px #4CAF50;
+}
+
 #about:hover{color:white;}
 button{background-color:#4CAF50;
           }
 
 #image:hover{border-radius:32px 0px;
-              border:1px solid #4CAF50
+              border:1px solid #4CAF50;
            -webkit-box-shadow: 0 35px 20px #777;
    -moz-box-shadow: 0 25px 20px #777;
    box-shadow: 0 25px 20px #777;
    }
 
-button:hover{color:white;
-background-color:blue;
-cursor:pointer; border-radius:12px 2px;}
+button:hover{color:white; border:0;
+cursor:pointer; border-radius:12px 2px;
+  background-color: #f038ff;
+  -webkit-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+  -moz-box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+  box-shadow: 10px 10px 99px 6px rgba(240, 56, 255, 1);
+}
 
 #cont:hover{color:white;}
 
@@ -123,7 +151,7 @@ cursor:pointer; border-radius:12px 2px;}
 					<tr> 
 						<td align="center" valign="middle">
 							
-					   <h3>   <font face="Times New Roman"size="6" color="#ffffff">
+					   <h3>   <font face="Times New Roman"size="6" color="#4CAF50" id="pf">
 							welcome to my profile!
 					    </font>
 					</h3>
@@ -160,7 +188,11 @@ cursor:pointer; border-radius:12px 2px;}
 					</tr>  
                                               <tr>
 						<td width="40%">
-		<!--image-->				<img src="rex.jpg" id="image" height="650px">
+
+
+		<!--image-->			<a href="gallery.html" target="_blank">
+                                                 	<img src="rex.jpg" id="image" height="650px">
+                                                </a>
 							
 <!--resume--> 
                    
@@ -247,113 +279,106 @@ cursor:pointer; border-radius:12px 2px;}
 								size="5" color="black">
 								<ul>
 									<li>
-										sign in form
-										<a href="#" style="text-decoration:none">
-											 ➲
+										
+										<a href="sign in.html" style="text-decoration:none">
+										sign in form ➲
 										</a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										Calculator
-										<a href="#" style="text-decoration:none"
+										<a href="calculator.html" style="text-decoration:none"
 											color="#c2c0c3">
-											 ➲
+											Calculator ➲
 										</a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										Calendar
+										
 										<a href="#" style="text-decoration:none">
-											 ➲
+										Calendar ➲
 										</a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										website designing
+										
 										<a href="#" style="text-decoration:none">
-											 ➲
+										website designing ➲
 										</a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										potfolio design
+										
 										<a href="#" style="text-decoration:none">
-											 ➲
+										potfolio design	 ➲
 										</a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										Daily Quiz
+										
 										<a href="#" style="text-decoration:none">
-											 ➲
+										Daily Quiz ➲
 										</a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										Emplyoyee Record System
+										
 										<a href="#" style="text-decoration:none">
-											 ➲
+										Emplyoyee Record System	 ➲
 										</a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										Guess the Number-Game
+										
 										<a href="#" style="text-decoration:none">
-											 ➲
+											Guess the Number-Game ➲
+										</a>
+									</li>
+
+									
+
+									<li>
+										<hr color="#c2c0c3">
+										
+										<a href="#" style="text-decoration:none">
+											Stone Paper Scissor➲
 										</a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										Random Password Generator
+										
 										<a href="#" style="text-decoration:none">
-											➲
+											Tic Tac Toe➲
 										</a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										Stone Paper Scissor
+										
 										<a href="#" style="text-decoration:none">
-											➲
+											Tic Tac Toe(GUI)➲
 										</a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										Tic Tac Toe
+										
 										<a href="#" style="text-decoration:none">
-											➲
-										</a>
+											ToDo App➲ </a>
 									</li>
 
 									<li>
 										<hr color="#c2c0c3">
-										Tic Tac Toe(GUI)
-										<a href="#" style="text-decoration:none">
-											➲
-										</a>
-									</li>
-
-									<li>
-										<hr color="#c2c0c3">
-										ToDo App
-										<a href="#" style="text-decoration:none">
-											➲ </a>
-									</li>
-
-									<li>
-										<hr color="#c2c0c3">
-										Travel Management System
+										
 										<a href="#" style=
-											"text-decoration:none"> ➲
+											"text-decoration:none"> Travel Management System➲
 										</a>
 									</li>
 								</ul>
@@ -488,9 +513,9 @@ cursor:pointer; border-radius:12px 2px;}
 					cellspacing="0" width="90%" align="center">
 					<tr>
 						<td width="13%" valign="top">
-							<b>LinkedIn</b>
+							
 							<a href="#" style="text-decoration:none">
-								➲
+							<b>LinkedIn</b>	➲
 							</a>
 						</td>
 
@@ -499,9 +524,9 @@ cursor:pointer; border-radius:12px 2px;}
 						</td>
 
 						<td width="13%" valign="top">
-							<b>FACEBOOK</b>
+							
 							<a href="https://www.facebook.com/shubham.shubhampushkar" style="text-decoration:none">
-								➲
+							<b>FACEBOOK</b>	➲
 							</a>
 						</td>
 
@@ -512,9 +537,9 @@ cursor:pointer; border-radius:12px 2px;}
 
 
 						<td width="13%" valign="top">
-							<b>whatsapp</b>
+							<b>+91-8171867997</b><br>
 							<a href="https://web.whatsapp.com/" style="text-decoration:none">
-								+91-8171867997
+								<b>whatsapp</b>
 							</a>
 						</td>
 
@@ -525,9 +550,9 @@ cursor:pointer; border-radius:12px 2px;}
 			
 
 						<td width="13%" valign="top">
-							<b>Instagram</b>
+							
 							<a href="https://www.instagram.com/shubham_pushkar_/" style="text-decoration:none">
-								➲
+							<b>Instagram</b>	➲
 							</a>
 						</td>
 
@@ -536,9 +561,9 @@ cursor:pointer; border-radius:12px 2px;}
 						</td>
 
 						<td width="13%" valign="top">
-							<b>Email</b>
+							
 							<a href="https://mail.google.com/mail/u/0/" style="text-decoration:none">
-								➲
+								<b>Email</b>
 							</a>
 						</td>
 
@@ -549,7 +574,7 @@ cursor:pointer; border-radius:12px 2px;}
 						<td width="13%" valign="top">
 							
 							<a href="https://banglescity.github.io/shubhampushkar.in/" style="text-decoration:none">
-								<b>Website</b>➲
+								<b> Website</b>
 							</a>
 						</td>
 					</tr>
